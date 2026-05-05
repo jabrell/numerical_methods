@@ -1,5 +1,5 @@
 *######################################################
-*          PARAMETER DEFINTIONS AND DATA
+*          PARAMETER DEFINITIONS AND DATA
 *######################################################
 
 * Comments start with * in the first column of a line
@@ -7,7 +7,7 @@
 
 $onText
 Definitions always start with a keyword (set, parameter, variable...)
-followed by one or serveral item to be defined.
+followed by one or several item to be defined.
 
 
 An item is defined by the GAMS name of the item followed by
@@ -39,12 +39,12 @@ define and assign data to them.
 
 - Scalars: Are parameters that do not depend on any set
 - Parameters: Are parameters that depend on sets.
-- Tables: Are an data input format to allow for mulit-dimensional
+- Tables: Are an data input format to allow for multi-dimensional
         parameters.
         
 Parameters is the most general approach as it allows to also declare
 Scalars and the values for multi-dimensional data.
-Be careful with tables, as they require strict allignment of the column
+Be careful with tables, as they require strict alignment of the column
 values.
 
 If parameters relate to a set, the relation is given parentheses. The order
@@ -100,11 +100,11 @@ c(i,j) = cf*distance(i,j)/1000;
 
 
 *######################################################
-*      VARIABLE DEFINTIONS AND EQUATION ASSIGNMENTS 
+*      VARIABLE DEFINITIONS AND EQUATION ASSIGNMENTS 
 *######################################################
 $onText
 Variable definitions follow the same rules as other items.
-The can be free in sign or "Postive".
+They can be free in sign or "Positive".
 
 Note that the value of your objective function must be
 free in sign.
@@ -126,7 +126,7 @@ Equation definitions follow the same rules as other items.
 
 Convention:
     - We name equations in lower cases
-    - If you have an interpreation for your equaltion it helps to use prefixes
+    - If you have an interpretation for your equation it helps to use prefixes
       for the names:
         - mkt_ -> Market clearing interpretation
         - zpf_ -> Zero-profit interpretation
@@ -224,13 +224,6 @@ demand_price(j) = mkt_dem.M(j);
 
 display total_production, demand_price;
 
-
-
-
-
-
-
-    
 
 
 
